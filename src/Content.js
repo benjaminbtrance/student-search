@@ -1,14 +1,10 @@
-import ItemList from './ItemList';
+import StudentList from './StudentList';
 
-const Content = ({ items, handleCheck, handleDelete }) => {
+const Content = ({ studentsList }) => {
 	return (
 		<>
-			{items.length ? (
-				<ItemList
-					items={items}
-					handleCheck={handleCheck}
-					handleDelete={handleDelete}
-				/>
+			{studentsList.length ? (
+				<StudentList students={studentsList} />
 			) : (
 				<p style={{ marginTop: '2rem' }}>Your list is empty.</p>
 			)}
