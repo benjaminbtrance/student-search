@@ -1,10 +1,10 @@
 import StudentList from './StudentList';
 
-const Content = ({ studentsList }) => {
+const Content = ({ studentList }) => {
 	return (
 		<>
-			{studentsList.length ? (
-				<StudentList students={studentsList} />
+			{studentList.length ? (
+				<StudentList students={studentList} />
 			) : (
 				<p style={{ marginTop: '2rem' }}>Your list is empty.</p>
 			)}
