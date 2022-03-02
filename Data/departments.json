@@ -1,6 +1,8 @@
 {
-	"university": "University of Cambridge",
-	"lastUpdatedTime": "2018-06-20 13:24:17-0500",
+	"school": {
+		"university": "University of Cambridge",
+		"lastUpdatedTime": "2018-06-20 13:24:17-0500"
+	},
 	"departments": [
 		{
 			"name": "Architecture and History of Art",

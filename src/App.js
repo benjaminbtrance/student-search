@@ -9,6 +9,7 @@ import './style.css';
 
 function App() {
 	const API_Students_URL = 'http://localhost:3500/body';
+	const API_Departments_URL = 'http://localhost:3501/departments';
 	const [items, setItems] = useState([]);
 	const [students, setStudents] = useState([]);
 	const [newItem, setNewItem] = useState('');
@@ -17,7 +18,7 @@ function App() {
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
-		const fetchItems = async () => {
+		const fetchStudent = async () => {
 			try {
 				const response = await fetch(API_Students_URL);
 				if (!response.ok) throw Error('Did not receive expected data');
@@ -32,7 +33,7 @@ function App() {
 			}
 		};
 
-		setTimeout(() => fetchItems(), 1000);
+		setTimeout(() => fetchStudent(), 1000);
 	}, []);
 
 	// const addItem = (item) => {
